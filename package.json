@@ -1,0 +1,38 @@
+{
+  "name": "lfjingt-blog",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "editFm": "node utils/editFrontmatter.js",
+    "baiduPush": "node utils/baiduPush.js https://LFJINGT.com && bash baiduPush.sh",
+    "publish": "cd ./theme-vdoing && npm publish && cd .. && yarn updateTheme",
+    "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "dayjs": "^1.9.7",
+    "inquirer": "^7.1.0",
+    "json2yaml": "^1.1.0",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-cursor-effects": "^1.0.2",
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-meting": "^0.3.1",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-ribbon-animation": "^1.1.3",
+    "vuepress-plugin-sakura": "^1.1.0",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-plugin-zooming": "^1.1.7",
+    "vuepress-theme-vdoing": "^1.8.5",
+    "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.5.1",
+    "vuepress-plugin-helper-live2d": "^1.0.2"
+  }
+}
