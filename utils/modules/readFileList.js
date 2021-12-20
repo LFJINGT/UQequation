@@ -35,7 +35,7 @@ function readFileList(dir = docsRoot, filesList = []) {
           }
 
         }
-      }        
+      }
   });
   return filesList;
 }
