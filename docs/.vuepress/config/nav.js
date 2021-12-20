@@ -60,8 +60,8 @@ module.exports = [
     ],
   },
   {
-    text: '更多',
-    link: '/more/',
+    text: '视频分享',
+    link: '/video/',
     items: [
       { text: '学习', link: '/pages/f2a556/' },
       { text: '面试', link: '/pages/aea6571b7a8bae86/' },
@@ -70,9 +70,8 @@ module.exports = [
       { text: '友情链接', link: '/friends/' },
     ],
   },
-  { text: '关于', link: '/about/' },
   {
-    text: '收藏',
+    text: '我的收藏',
     link: '/pages/beb6c0bd8a66cea6/',
     // items: [
     //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
@@ -80,13 +79,14 @@ module.exports = [
     //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
     // ],
   },
-  {
-    text: '索引',
-    link: '/archives/',
-    items: [
-      { text: '分类', link: '/categories/' },
-      { text: '标签', link: '/tags/' },
-      { text: '归档', link: '/archives/' },
-    ],
-  },
+  { text: '关于我们', link: '/about/' },
+  // {
+  //   text: '索引',
+  //   link: '/archives/',
+  //   items: [
+  //     { text: '分类', link: '/categories/' },
+  //     { text: '标签', link: '/tags/' },
+  //     { text: '归档', link: '/archives/' },
+  //   ],
+  // },
 ]

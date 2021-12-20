@@ -120,7 +120,7 @@ module.exports = [
         recoverTime: 2000
     }
   ],
-  '@vuepress/nprogress',// 进度条
+  ["@vuepress/nprogress",{}],// 进度条
   ["cursor-effects",{}],// 鼠标动效
   [
     "meting", // 一个音乐播放器

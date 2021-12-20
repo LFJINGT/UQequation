@@ -3,7 +3,6 @@ const plugins = require('./config/plugins.js');
 const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
-  // theme: 'vdoing', // 使用npm包主题
   theme: require.resolve('../../theme-YuanJi'), // 使用本地主题
   title: "元集",
   description: '这是一个简单安静的资源分享站点',
