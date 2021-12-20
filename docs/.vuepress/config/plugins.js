@@ -1,52 +1,19 @@
 // 插件配置
 module.exports = [
-  // 本地插件
-  // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-  //   color: '#11a8cd', // 爱心颜色，默认随机色
-  //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-  // }],
-
-  'vuepress-plugin-baidu-autopush', // 百度自动推送
 
   // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
   [
     'thirdparty-search',
     {
       thirdparty: [
-        // 可选，默认 []
-        {
-          title: '在MDN中搜索',
-          frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-          behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-        },
-        {
-          title: '在Runoob中搜索',
-          frontUrl: 'https://www.runoob.com/?s=',
-        },
-        {
-          title: '在Vue API中搜索',
-          frontUrl: 'https://cn.vuejs.org/v2/api/#',
-        },
         {
           title: '在Bing中搜索',
           frontUrl: 'https://cn.bing.com/search?q=',
         },
         {
-          title: "在谷歌中搜索",
-          frontUrl: "https://www.google.com.hk/search?q="
-        },
-        {
           title: "在百度中搜索", // 在搜索结果显示的文字
           frontUrl: "https://www.baidu.com/s?wd=", // 搜索链接的前面部分
           behindUrl: "" // 搜索链接的后面部分，可选，默认 ''
-        },
-        {
-          title: "在360中搜索",
-          frontUrl: "https://www.so.com/s?q="
-        },
-        {
-          title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3ALFJINGT.com%20',
         },
       ],
     },
@@ -85,12 +52,6 @@ module.exports = [
       },
     },
   ],
-  // [
-  //   'vuepress-plugin-baidu-tongji', // 百度统计
-  //   {
-  //     hm: '503f098e7e5b3a5b5d8c5fc2938af002',
-  //   },
-  // ],
   [
     'vuepress-plugin-comment', // 评论
     {
@@ -162,7 +123,7 @@ module.exports = [
   '@vuepress/nprogress',// 进度条
   ["cursor-effects",{}],// 鼠标动效
   [
-    "meting",
+    "meting", // 一个音乐播放器
     {
       auto: "https://music.163.com/#/playlist?id=6760375947&userid=438400047",
       meting: {

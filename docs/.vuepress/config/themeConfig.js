@@ -51,10 +51,10 @@ module.exports = {
     link: 'https://github.com/LFJINGT', // 可选的
   },
   blogger: {
-    // 博主信息，显示在首页侧边栏
+    // 站点信息，显示在首页侧边栏
     avatar: '/img/author_img.jpg',
-    name: 'LFJINGT',
-    slogan: '追着蒲公英奔跑的小孩',
+    name: '元集',
+    slogan: '一元五次方程组',
   },
   social: {
     // 社交图标，显示于博主信息栏和页脚栏
@@ -79,9 +79,8 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2020, // 博客创建年份
+    createYear: 2020, // 网站创建年份
     copyrightInfo:
       'LFJINGT | <a href="https://github.com/LFJINGT/lfjingt-blog/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
-  // htmlModules // 插入hmtl(广告)模块
 }
