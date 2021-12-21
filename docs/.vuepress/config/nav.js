@@ -89,11 +89,11 @@ module.exports = [
     text: '视频分享',
     link: '/video/',
     items: [
-      { text: '学习', link: '/pages/f2a556/' },
-      { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-      { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-      { text: '实用技巧', link: '/pages/baaa02/' },
-      { text: '友情链接', link: '/friends/' },
+      { text: '黑马程序员匠心之作C++教程', link: '/pages/504475/' },
+      { text: 'C语言入门', link: '/pages/8a6909/' },
+      { text: 'Python基础教程全集', link: '/pages/2e3a1b/' },
+      { text: 'C#编程', link: '/pages/4da736/' },
+      { text: '《Python教程全套》完全入门版', link: '/pages/bc42ca/' },
     ],
   },
   {
