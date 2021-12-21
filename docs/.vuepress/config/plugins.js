@@ -59,7 +59,7 @@ module.exports = [
       options: {
         clientID: '8babf1b5fdd16a41776f',
         clientSecret: '64dfa9acdba043dcb42e715866563b66fbd2cd7d',
-        repo: 'blog', // GitHub 仓库
+        repo: 'UQequation', // GitHub 仓库
         owner: 'LFJINGT', // GitHub仓库所有者
         admin: ['LFJINGT'], // 对仓库有写权限的人
         // distractionFreeMode: true,
