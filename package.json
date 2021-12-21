@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "eslint": "^8.5.0",
+    "vue-canvas-effect": "^0.0.12",
     "vuepress-plugin-comment": "^0.5.1",
     "vuepress-plugin-helper-live2d": "^1.0.2"
   }

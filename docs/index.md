@@ -180,7 +180,7 @@ export default {
       this.scrollFn();
     })
   },
-
+  // FIXME: 移动端下，跳转距离存在问题
   methods: {
     scrollFn() {
       const windowH = document.getElementsByClassName('banner-conent')[0].clientHeight; // 获取窗口高度

@@ -59,6 +59,7 @@
           </div>
         </div>
         <!-- PC端features块 e -->
+
       </div>
 
       <!-- 移动端features块 s -->
@@ -108,6 +109,10 @@
       <!-- 移动端features块 e -->
     </div>
     <!-- banner块 e -->
+
+    <!-- XXX: pc端下，气泡位置向下偏移了1vh -->
+    <!-- 气泡特效 -->
+        <component v-if="bubbles" :is="bubbles" ></component>
 
     <MainLayout>
       <template #mainLeft>
@@ -188,7 +193,9 @@ export default {
 
       total: 0, // 总长
       perPage: 10, // 每页长
-      currentPage: 1// 当前页
+      currentPage: 1, // 当前页
+
+      bubbles: null, // 泡泡
     }
   },
   computed: {
@@ -229,7 +236,7 @@ export default {
       } else if (bannerBg.model.indexOf('standard') > -1) { // 大图
         return `background: url(${this.$withBase(bannerBg.imgUrl)}) center center / cover no-repeat`
       } else if (bannerBg.model.indexOf('random') > -1) { // 刷新随机展示图片
-        // TODO: 完成随机切换首图
+        // XXX: 完成随机切换首图
         // 刷新网页时，首页页面大图随机播放
         return "background: url("+bannerBg.imgUrl[Math.floor(Math.random()*(bannerBg.imgUrl.length))]+") center center / cover no-repeat"
       }
@@ -290,6 +297,13 @@ export default {
       }
     }
   },
+  // XXX: 添加泡泡
+  mounted () {
+    //引入泡泡组件
+    import('vue-canvas-effect/src/components/bubbles').then(module => { 
+      this.bubbles = module.default
+    })
+  },
   methods: {
     init () {
       clearTimeout(this.playTimer)
@@ -345,14 +359,14 @@ export default {
   .banner
     width 100%
     min-height 450px
-    height 100vh // 全屏
+    // height 95vh // 全屏
     margin-top $navbarHeight
     color $bannerTextColor
     position relative
     overflow hidden
     .banner-conent
       max-width $homePageWidth
-      height 100vh // 全屏
+      height 85vh // 全屏
       margin 0px auto
       position relative
       z-index 1
