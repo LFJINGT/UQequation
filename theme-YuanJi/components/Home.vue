@@ -212,22 +212,26 @@ export default {
     },
     bannerBgStyle () {
       let bannerBg = this.homeData.bannerBg
-      if (!bannerBg || bannerBg === 'auto') { // 默认
+      if (!bannerBg.model || bannerBg.model === 'auto') { // 默认
         if (this.$themeConfig.bodyBgImg) { // 当有bodyBgImg时，不显示背景
           return ''
         } else { // 网格纹背景
           return 'background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)'
         }
-      } else if (bannerBg === 'none') { // 无背景
+      } else if (bannerBg.model === 'none') { // 无背景
         if (this.$themeConfig.bodyBgImg) {
           return ''
         } else {
           return 'background: var(--mainBg);color: var(--textColor)'
         }
-      } else if (bannerBg.indexOf('background') > -1) { // 自定义背景样式
-        return bannerBg
-      } else if (bannerBg.indexOf('.') > -1) { // 大图
-        return `background: url(${this.$withBase(bannerBg)}) center center / cover no-repeat`
+      } else if (bannerBg.model.indexOf('background') > -1) { // 自定义背景样式
+        return bannerBg.model
+      } else if (bannerBg.model.indexOf('standard') > -1) { // 大图
+        return `background: url(${this.$withBase(bannerBg.imgUrl)}) center center / cover no-repeat`
+      } else if (bannerBg.model.indexOf('random') > -1) { // 刷新随机展示图片
+        // TODO: 完成随机切换首图
+        // 刷新网页时，首页页面大图随机播放
+        return "background: url("+bannerBg.imgUrl[Math.floor(Math.random()*(bannerBg.imgUrl.length))]+") center center / cover no-repeat"
       }
 
     },

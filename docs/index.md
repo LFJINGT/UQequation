@@ -5,9 +5,21 @@ heroText: 元集
 tagline: 这是一个简单安静全面的分享小站。
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: /img/tbg/tbg7.jpg
-         # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg:
+      model: random # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | standard '大图地址' | background: 自定义背景样式  |  random '大图地址（数组）'    提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
+      imgUrl: [
+        'https://zyj_yida.gitee.io/source/img/indexbg/1.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/2.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/3.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/4.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/5.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/6.jpg',
+        'https://zyj_yida.gitee.io/source/img/indexbg/7.jpg'
+      ]
+
+
+        
 # features: # 可选的
 #   - title: 导航大全
 #     details: JavaScript、ES6、Vue框架等前端技术
@@ -80,7 +92,6 @@ bannerBg: /img/tbg/tbg7.jpg
 - **GitHub**: <https://github.com/LFJINGT>
 
 </br>  -->
-
 
 <!-- 首页小箭头 -->
 <style>

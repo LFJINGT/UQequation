@@ -29,6 +29,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
+    "eslint": "^8.5.0",
     "vuepress-plugin-comment": "^0.5.1",
     "vuepress-plugin-helper-live2d": "^1.0.2"
   }
