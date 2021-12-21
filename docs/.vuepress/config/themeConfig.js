@@ -56,7 +56,7 @@ module.exports = {
     slogan: '一元五次方程组',
   },
   social: {
-    // 社交图标，显示于博主信息栏和页脚栏
+    // 社交图标，显示于信息栏和页脚栏
     // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
     icons: [
       {
@@ -78,8 +78,8 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2020, // 网站创建年份
+    createYear: 2021, // 网站创建年份
     copyrightInfo:
-      'LFJINGT | <a href="https://github.com/LFJINGT/lfjingt-blog/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'LFJINGT | <a href="https://github.com/LFJINGT/UQequation/main/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
 }
