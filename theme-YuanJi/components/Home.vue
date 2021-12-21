@@ -366,7 +366,7 @@ export default {
     overflow hidden
     .banner-conent
       max-width $homePageWidth
-      height 85vh // 全屏
+      height 86vh // 首图全屏显示
       margin 0px auto
       position relative
       z-index 1

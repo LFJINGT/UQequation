@@ -132,7 +132,7 @@ module.exports = [
         mid: "6760375947", //歌单或音乐id
       },
       aplayer: {
-        autoplay: true,
+        autoplay: false,
         mini: true,
         theme: '#282c34',
       },
@@ -167,7 +167,7 @@ module.exports = [
           position: "right", // 显示位置：left/right(default: 'right')
           width: 135, // 模型的长度(default: 135)
           height: 300, // 模型的高度(default: 300)
-          hOffset: 65, //  水平偏移(default: 65)
+          hOffset: 140, //  水平偏移(default: 65)
           vOffset: 0, //  垂直偏移(default: 0)
         },
         mobile: {
