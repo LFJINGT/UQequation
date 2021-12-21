@@ -6,7 +6,7 @@ module.exports = {
   theme: require.resolve('../../theme-YuanJi'), // 使用本地主题
   title: "元集",
   description: '这是一个简单安静的资源分享站点',
-  base: '/YuanJi/', // 格式：'/<仓库名>/'， 默认'/'
+  base: '/', // 格式：'/<仓库名>/'， 默认'/'
   markdown: {
     lineNumbers: true, // 代码行号
   },
