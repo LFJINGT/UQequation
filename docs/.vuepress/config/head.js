@@ -6,7 +6,7 @@ module.exports = [
     'meta',
     {
       name: 'keywords',
-      content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+      content: '软件分享,技术分享,windows软件下载,精品视频,元集,一元五次方程组,一元五次方程,技术文档,学习,软件大全,LFJINGT,简单的小站',
     },
   ],
   ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
