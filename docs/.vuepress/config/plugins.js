@@ -113,9 +113,9 @@ module.exports = [
   [
     "dynamic-title", //添加动态标题
     {
-        showIcon: "/img/favicon.ico",
+        showIcon: "/img/weblogo.ico",
         showText: "(/≧▽≦/)咦！又好了！",
-        hideIcon: "/img/logo.png",
+        hideIcon: "/img/teamlogo.ico",
         hideText: "(●—●)喔哟，崩溃啦！",
         recoverTime: 2000
     }
